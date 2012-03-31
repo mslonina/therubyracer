@@ -16,7 +16,6 @@ $INCFLAGS.insert 0, "-I#{Libv8.include_path} "
 
 $CPPFLAGS += " -Wall" unless $CPPFLAGS.split.include? "-Wall"
 $CPPFLAGS += " -g" unless $CPPFLAGS.split.include? "-g"
-$CPPFLAGS += " -rdynamic" unless $CPPFLAGS.split.include? "-rdynamic"
 
 $LDFLAGS.insert 0, "#{Libv8.library_path}/libv8.#{$LIBEXT} "
 $LIBS << ' -lpthread'
